@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+  background-image: url("images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to right, hsl(10, 100%, 72%), hsl(354, 100%, 64%) 70%);
+  background-position-y: center;
+  background-position-x: 35%;
+}
+
+.phone-bg {
+  background-image: url("images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

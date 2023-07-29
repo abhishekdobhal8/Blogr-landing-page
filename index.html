@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Bloggr-landing-page</title>
+  </head>
+  <body>
+    <section class="hero-section rounded-bl-sectionBorder mb-16">
+      <!-- Navigation -->
+      <nav>
+        <div
+          class="relative container font-bold justify-between items-center px-4 pt-12 mx-auto flex text-gray-200"
+        >
+          <div>
+            <img src="images/logo.svg" class="pr-10" alt="" />
+          </div>
+          <div class="hidden w-full justify-between md:flex">
+            <ul class="hidden space-x-6 md:flex">
+              <li class="nav-list-item1 relative flex items-center space-x-2">
+                <a class="hover:text-gray-50 hover:underline" href="#"
+                  >Product</a
+                >
+                <img src="images/icon-arrow-light.svg" alt="" />
+                <ul
+                  class="hidden bg-white text-black space-y-2 rounded-md px-6 py-8 w-40 font-medium absolute top-12 left-0 shadow-2xlprettier-plugin"
+                >
+                  <li class="hover:font-bold">Overview</li>
+                  <li class="hover:font-bold">Pricing</li>
+                  <li class="hover:font-bold">Marketplace</li>
+                  <li class="hover:font-bold">Features</li>
+                  <li class="hover:font-bold">Integration</li>
+                </ul>
+              </li>
+              <li class="nav-list-item2 relative flex items-center space-x-2">
+                <a class="hover:text-gray-50 hover:underline" href="#"
+                  >Company</a
+                >
+                <img src="images/icon-arrow-light.svg" alt="" />
+                <ul
+                  class="hidden bg-white text-black space-y-2 rounded-md px-6 py-8 w-40 font-medium absolute top-12 left-0 shadow-2xlprettier-plugin"
+                >
+                  <li class="hover:font-bold">About</li>
+                  <li class="hover:font-bold">Team</li>
+                  <li class="hover:font-bold">Blog</li>
+                  <li class="hover:font-bold">Careers</li>
+                </ul>
+              </li>
+              <li class="nav-list-item3 relative flex items-center space-x-2">
+                <a class="hover:text-gray-50 hover:underline" href="#"
+                  >Connect</a
+                >
+                <img src="images/icon-arrow-light.svg" alt="" />
+                <ul
+                  class="hidden bg-white text-black space-y-2 rounded-md px-6 py-8 w-40 font-medium absolute top-12 left-0 shadow-2xlprettier-plugin"
+                >
+                  <li class="hover:font-bold">Contact</li>
+                  <li class="hover:font-bold">Newsletter</li>
+                  <li class="hover:font-bold">LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="space-x-6">
+              <button class="hover:text-gray-50 hover:underline">Login</button>
+              <button
+                class="rounded-full text-pinkNormal hover:bg-pinkLight hover:text-white bg-white px-8 py-2"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+          <div class="navToggle md:hidden hover:cursor-pointer">
+            <img
+              src="images/icon-hamburger.svg"
+              class="icon-hamburger"
+              alt=""
+            />
+            <img src="images/icon-close.svg" class="hidden icon-close" alt="" />
+          </div>
+
+          <!-- mobile navigation -->
+          <div
+            class="mobile-nav left-4 right-4 absolute top-32 rounded-md bg-white text-black font-semibold text-center space-y-4 p-6 md:hidden shadow-2xl"
+          >
+            <ul class="space-y-3">
+              <li class="space-y-3">
+                <div class="flex items-center justify-center space-x-2">
+                  <a href="#" class="mobile-nav-list-item1 hover:text-gray-600"
+                    >Product</a
+                  >
+                  <img src="images/icon-arrow-dark.svg" alt="" />
+                </div>
+                <ul
+                  class="hidden mobile-sub-list1 bg-gray-100 text-gray-400 space-y-2 rounded-md px-3 py-4 w-full text-center"
+                >
+                  <li class="hover:font-bold">Overview</li>
+                  <li class="hover:font-bold">Pricing</li>
+                  <li class="hover:font-bold">Marketplace</li>
+                  <li class="hover:font-bold">Features</li>
+                  <li class="hover:font-bold">Integration</li>
+                </ul>
+              </li>
+              <li class="space-y-3">
+                <div class="flex items-center justify-center space-x-2">
+                  <a href="#" class="mobile-nav-list-item2 hover:text-gray-600"
+                    >Company</a
+                  >
+                  <img src="images/icon-arrow-dark.svg" alt="" />
+                </div>
+                <ul
+                  class="hidden mobile-sub-list2 bg-gray-100 text-gray-400 space-y-2 rounded-md px-3 py-4 w-full text-center"
+                >
+                  <li class="hover:font-bold">About</li>
+                  <li class="hover:font-bold">Team</li>
+                  <li class="hover:font-bold">Blog</li>
+                  <li class="hover:font-bold">Careers</li>
+                </ul>
+              </li>
+              <li class="space-y-3">
+                <div class="flex items-center justify-center space-x-2">
+                  <a href="#" class="mobile-nav-list-item3 hover:text-gray-600"
+                    >Connect</a
+                  >
+                  <img src="images/icon-arrow-dark.svg" alt="" />
+                </div>
+                <ul
+                  class="hidden mobile-sub-list3 bg-gray-100 text-gray-400 space-y-2 rounded-md px-3 py-4 w-full text-center"
+                >
+                  <li class="hover:font-bold">Contact</li>
+                  <li class="hover:font-bold">Newsletter</li>
+                  <li class="hover:font-bold">LinkedIn</li>
+                </ul>
+              </li>
+            </ul>
+            <span class="block w-full h-px bg-gray-200"></span>
+            <div class="flex flex-col items-center justif-center space-y-3">
+              <button class="hover:text-gray-600">Login</button>
+              <button
+                class="rounded-full font-bold text-white bg-gradient-to-r from-orangePink to-pinkNormal hover:from-pinkNormal hover:to-orangePink px-8 py-2"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <div class="text-center space-y-6 py-32 px-4">
+        <h1 class="text-4xl md:text-6xl font-semibold text-white">
+          A modern publishing platform
+        </h1>
+        <p class="text-gray-200 text-xl">
+          Grow your audience and build your online brand
+        </p>
+        <div
+          class="flex items-center justify-center gap-4 flex-wrap flex-shrink-0 p-4 font-bold"
+        >
+          <button
+            class="rounded-full text-pinkNormal border-2 border-white hover:border-pinkLight hover:bg-pinkLight hover:text-white bg-white px-4 py-2"
+          >
+            Start for free
+          </button>
+          <button
+            class="rounded-full text-white border-2 border-white hover:text-pinkLight hover:bg-white bg-transparent px-5 py-2"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Design for the future -->
+    <section>
+      <h2
+        class="text-center pt-20 text-4xl mx-4 mb-10 lg:mb-0 lg:mx-0 font-semibold text-sectionHeading"
+      >
+        Design for the future
+      </h2>
+      <div
+        class="flex flex-col-reverse lg:justify-between items-center lg:flex-row"
+      >
+        <div
+          class="mx-8 md:mx-40 lg:w-3/5 text-center lg:text-start lg:m-20 space-y-16"
+        >
+          <div class="space-y-6 text-gray-500">
+            <h3 class="text-3xl font-semibold text-sectionHeading">
+              Introducing an extensible editor
+            </h3>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="space-y-6 text-gray-500">
+            <h3 class="text-3xl font-semibold text-sectionHeading">
+              Robust content management
+            </h3>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you're in full control.
+            </p>
+          </div>
+        </div>
+        <div class="mb-10 lg:mb-0">
+          <img
+            src="images/illustration-editor-desktop.svg"
+            class="hidden lg:block"
+            alt=""
+          />
+          <img
+            src="images/illustration-editor-mobile.svg"
+            class="lg:hidden"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Phone section -->
+    <section class="relative my-20 lg:my-0">
+      <div
+        class="flex flex-col text-center lg:text-start lg:justify-between items-center lg:flex-row lg:mx-20 lg:gap-36"
+      >
+        <div class="mt-10 lg:mb-0">
+          <img src="images/illustration-phones.svg" alt="" />
+        </div>
+        <div
+          class="mx-8 md:mx-40 lg:mx-0 lg:w-1/2 space-y-6 text-white mb-20 lg:mb-0"
+        >
+          <h2 class="text-4xl font-semibold">
+            State of the Art Infrastructure
+          </h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+        <div
+          class="phone-bg absolute top-52 bottom-0 left-0 -z-10 rounded-tr-sectionBorder rounded-bl-sectionBorder bg-sectionHeading w-full lg:top-24 lg:bottom-24"
+        ></div>
+      </div>
+    </section>
+    <!-- laptop section -->
+    <section>
+      <div
+        class="flex flex-col-reverse lg:justify-between items-center lg:flex-row"
+      >
+        <div class="mt-10 lg:mb-0">
+          <img
+            src="images/illustration-laptop-desktop.svg"
+            class="hidden lg:block"
+            alt=""
+          />
+          <img
+            src="images/illustration-laptop-mobile.svg"
+            class="lg:hidden"
+            alt=""
+          />
+        </div>
+        <div
+          class="mx-8 md:mx-40 lg:w-1/2 text-center lg:text-start lg:m-20 space-y-16"
+        >
+          <div class="space-y-6 text-gray-500">
+            <h3 class="text-3xl font-semibold text-sectionHeading">
+              Free, open, simple
+            </h3>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting. RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and relatively easy to learn.
+            </p>
+          </div>
+          <div class="space-y-6 text-gray-500">
+            <h3 class="text-3xl font-semibold text-sectionHeading">
+              Powerful tooling
+            </h3>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customizatioin and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div
+        class="pb-10 rounded-tr-sectionBorder flex flex-col text-center md:text-start items-center md:items-start w-full bg-sectionHeading text-white md:flex-row"
+      >
+        <div class="my-16 md:ml-20">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <ul
+          class="w-full font-bold space-y-10 md:space-y-0 md:flex md:flex-row md:justify-evenly md:mt-16 md:items-start"
+        >
+          <li>
+            <h4 class="mb-4">Product</h4>
+            <ul class="font-normal space-y-2 text-gray-400">
+              <li><a class="hover:underline" href="#">Overview</a></li>
+              <li><a class="hover:underline" href="#">Pricing</a></li>
+              <li><a class="hover:underline" href="#">Marketplace</a></li>
+              <li><a class="hover:underline" href="#">Features</a></li>
+              <li><a class="hover:underline" href="#">Integrationz</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="mb-4">Company</h4>
+            <ul class="font-normal space-y-2 text-gray-400">
+              <li><a class="hover:underline" href="#">About</a></li>
+              <li><a class="hover:underline" href="#">Team</a></li>
+              <li><a class="hover:underline" href="#">Blog</a></li>
+              <li><a class="hover:underline" href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="mb-4">Connect</h4>
+            <ul class="font-normal space-y-2 text-gray-400">
+              <li><a class="hover:underline" href="#">Contact</a></li>
+              <li><a class="hover:underline" href="#">Newsletter</a></li>
+              <li><a class="hover:underline" href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
